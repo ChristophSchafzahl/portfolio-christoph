@@ -8,6 +8,12 @@ module.exports = {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
         serif: ['"Roboto Slab"', ...defaultTheme.fontFamily.serif],
       },
+      colors: {
+        teal: {
+          1000: '#2e5c62',
+          1100: '#122527',
+        },
+      },
     },
   },
   plugins: [],
