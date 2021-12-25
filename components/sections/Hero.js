@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import portrait from '../../public/images/portrait.jpg';
-import { ArrowLink, Heading } from '..';
+import portrait from '/public/images/portrait.jpg';
+import { ArrowLink } from '@components/index';
 
 const Hero = () => {
   return (
