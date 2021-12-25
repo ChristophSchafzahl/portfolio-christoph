@@ -18,11 +18,13 @@ const Hero = () => {
         </div>
 
         <div className="-mt-3 flex justify-between flex-col">
-          <h1 className="max-w-sm mb-6 text-teal-50 text-4xl sm:text-5xl !leading-tight font-bold">
+          <h1 className="max-w-sm mb-6 text-4xl sm:text-5xl !leading-tight font-bold">
             Hey! <br />
             I&apos;m Christoph, <br />a game dev student from Austria
           </h1>
-          <ArrowLink url="mailto:christoph.schafzahl@gmail.com">Email me</ArrowLink>
+          <ArrowLink className="text-lg" url="mailto:christoph.schafzahl@gmail.com">
+            Email me
+          </ArrowLink>
         </div>
       </div>
     </section>
