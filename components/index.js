@@ -9,3 +9,4 @@ export { default as Hero } from './sections/Hero';
 export { default as About } from './sections/About';
 export { default as Skills } from './sections/Skills';
 export { default as Projects } from './sections/Projects';
+export { default as Modeling } from './sections/Modeling';

@@ -1,4 +1,4 @@
-import { Hero, About, Skills, Projects } from '@components/index';
+import { Hero, About, Skills, Projects, Modeling } from '@components/index';
 import { skills } from '/data/index';
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
         <About />
         <Skills skills={skills} />
         <Projects />
+        <Modeling />
       </main>
       <div className="h-32"></div>
     </div>

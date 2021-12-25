@@ -21,6 +21,9 @@ module.exports = {
           darker: '#122527',
         },
       },
+      gridTemplateColumns: {
+        models: '0.4fr 0.6fr',
+      },
     },
   },
   plugins: [],
