@@ -16,9 +16,9 @@ export const projects = [
       { text: 'GitHub', url: 'https://github.com' },
     ],
     images: [
-      '/towerhold/towerhold-1.png',
-      '/towerhold/towerhold-2.png',
-      '/towerhold/towerhold-3.png',
+      '/towerhold/towerhold-1.jpg',
+      '/towerhold/towerhold-2.jpg',
+      '/towerhold/towerhold-3.jpg',
     ],
   },
   {
@@ -30,11 +30,11 @@ export const projects = [
       { text: 'GitHub', url: 'https://github.com' },
     ],
     images: [
-      '/towerhold/towerhold-2.png',
-      '/towerhold/towerhold-1.png',
-      '/towerhold/towerhold-3.png',
+      '/towerhold/towerhold-2.jpg',
+      '/towerhold/towerhold-1.jpg',
+      '/towerhold/towerhold-3.jpg',
     ],
   },
 ];
 
-export const models = ['turm.png', 'auto.png', 'spinne.png'];
+export const models = ['turm.jpg', 'auto.jpg', 'spinne.jpg'];
