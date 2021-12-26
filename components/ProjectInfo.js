@@ -1,21 +1,20 @@
 import { ArrowLink } from '@components/index';
 
-const ProjectInfo = ({ className }) => {
+const ProjectInfo = ({ className, info }) => {
+  const { title, description, links } = info;
   return (
     <div className={`${className}`}>
-      <h3 className="text-2xl font-bold">Towerhold</h3>
-      <p className="my-6 text-lg">
-        Bacon ipsum dolor amet duis ham hock qui kevin consectetur ex sint quis minim nostrud velit
-        dolore incididunt. Deserunt ut short ribs andouille pastrami in biltong aliquip duis laboris
-        leberkas tenderloin proident.
-      </p>
+      <h3 className="text-2xl font-bold">{title}</h3>
+      <p className="my-6 text-lg">{description}</p>
       <div className="flex justify-between">
-        <ArrowLink className="text-lg" url="https://google.com">
-          Read More
-        </ArrowLink>
-        <ArrowLink className="text-lg" url="https://google.com">
-          GitHub
-        </ArrowLink>
+        {links.map((link, idx) => {
+          const { text, url } = link;
+          return (
+            <ArrowLink key={idx} className="text-lg" url={url}>
+              {text}
+            </ArrowLink>
+          );
+        })}
       </div>
     </div>
   );

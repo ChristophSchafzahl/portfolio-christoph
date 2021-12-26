@@ -22,7 +22,7 @@ module.exports = {
         },
       },
       gridTemplateColumns: {
-        models: '0.4fr 0.6fr',
+        models: '20rem 1fr',
       },
     },
   },

@@ -1,20 +1,23 @@
 import { Heading, ProjectInfo, ProjectImages } from '@components/index';
+import useWindowDimensions from '/hooks/useWindowDimensions';
 
 const Projects = ({ projects }) => {
+  const { width } = useWindowDimensions();
   return (
     <section className="mt-32">
       <Heading>Games I&apos;ve built</Heading>
-      <div className="mt-20 grid grid-cols-2 gap-x-20 gap-y-32">
-        {[0, 1].map((i, el) => {
-          return i % 2 == 0 ? (
+      <div className="mt-20 pl-6 pr-9 lg:px-0 grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-16 md:gap-y-32">
+        {projects.map((project, i) => {
+          const { images, ...info } = project;
+          return width >= 768 && i % 2 == 0 ? (
             <>
-              <ProjectImages />
-              <ProjectInfo />
+              <ProjectImages images={images} />
+              <ProjectInfo info={info} />
             </>
           ) : (
             <>
-              <ProjectInfo />
-              <ProjectImages />
+              <ProjectInfo info={info} />
+              <ProjectImages images={images} />
             </>
           );
         })}

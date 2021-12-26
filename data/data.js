@@ -15,16 +15,26 @@ export const projects = [
       { text: 'Read More', url: 'https://google.com' },
       { text: 'GitHub', url: 'https://github.com' },
     ],
-    images: ['towerhold-1.jpg', 'towerhold-2.jpg', 'towerhold-3.jpg'],
+    images: [
+      '/towerhold/towerhold-1.png',
+      '/towerhold/towerhold-2.png',
+      '/towerhold/towerhold-3.png',
+    ],
   },
   {
     title: 'Second Game',
     description:
-      'Bacon ipsum dolor amet duis ham hock qui kevin consectetur ex sint quis minim nostrud velit dolore incididunt. Deserunt ut short ribs andouille pastrami in biltong aliquip duis laboris leberkas.',
+      'Bacon ipsum dolor amet duis ham hock qui kevin consectetur ex sint quis minim nostrud velit dolore incididunt. Deserunt ut short ribs andouille pastrami in biltong aliquip duis laboris leberkas tenderlon proident ut duis hoch ex sint.',
     links: [
       { text: 'Live Site', url: 'https://google.com' },
       { text: 'GitHub', url: 'https://github.com' },
     ],
-    images: ['js-game-1.jpg', 'js-game-2.jpg', 'js-game-3.jpg'],
+    images: [
+      '/towerhold/towerhold-2.png',
+      '/towerhold/towerhold-1.png',
+      '/towerhold/towerhold-3.png',
+    ],
   },
 ];
+
+export const models = ['turm.png', 'auto.png', 'spinne.png'];

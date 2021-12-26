@@ -4,13 +4,29 @@ import 'swiper/css/bundle';
 
 const ProjectImages = ({ className, images }) => {
   return (
-    <div>
-      <div className="swiper-button-prev !left-auto !right-full ml-4"></div>
-      <div className="swiper-button-prev !right-auto !left-full ml-4"></div>
-      <Swiper modules={[EffectCards, Navigation]} effect="cards" navigation={true}>
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+    <div className={`${className} min-h-[14rem] relative`}>
+      <div className="swiper-button-prev-unique"></div>
+      <div className="swiper-button-next-unique"></div>
+      <Swiper
+        className="w-full h-full"
+        modules={[EffectCards, Navigation]}
+        effect="cards"
+        navigation={true}
+      >
+        {images.map((image, idx) => {
+          return (
+            <SwiperSlide
+              className="flex justify-center items-center rounded-2xl shadow-lg"
+              key={idx}
+            >
+              <img
+                className="w-full h-full object-cover"
+                src={`/images/projects/${image}`}
+                alt={`Project image ${idx + 1}`}
+              />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </div>
   );
