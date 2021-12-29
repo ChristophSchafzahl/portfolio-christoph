@@ -1,9 +1,9 @@
 import { ArrowLink } from '@components/index';
 
-const ProjectInfo = ({ className, info }) => {
+const ProjectInfo = ({ info }) => {
   const { title, description, links } = info;
   return (
-    <div className={`${className}`}>
+    <p>
       <h3 className="text-2xl font-bold">{title}</h3>
       <p className="my-6 text-lg">{description}</p>
       <div className="flex justify-between">
@@ -16,7 +16,7 @@ const ProjectInfo = ({ className, info }) => {
           );
         })}
       </div>
-    </div>
+    </p>
   );
 };
 

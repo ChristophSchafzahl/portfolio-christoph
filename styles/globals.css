@@ -10,15 +10,20 @@
   }
 }
 
-.swiper-button-prev {
+/* .swiper-button-prev {
   left: -40px !important;
 }
 
 .swiper-button-next {
   right: -54px !important;
-}
+} */
 
 .swiper-button-prev,
 .swiper-button-next {
   transition: all 100ms !important;
+}
+
+.houses-swiper .swiper-button-prev,
+.houses-swiper .swiper-button-next {
+  --swiper-theme-color: #122527;
 }

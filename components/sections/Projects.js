@@ -1,5 +1,5 @@
 import { Heading, ProjectInfo, ProjectImages } from '@components/index';
-import React from 'react';
+import { Fragment } from 'react';
 import useWindowDimensions from '/hooks/useWindowDimensions';
 
 const Projects = ({ projects }) => {
@@ -11,15 +11,15 @@ const Projects = ({ projects }) => {
         {projects.map((project, i) => {
           const { images, ...info } = project;
           return width >= 768 && i % 2 == 0 ? (
-            <React.Fragment key={i}>
+            <Fragment key={i}>
               <ProjectImages images={images} />
               <ProjectInfo info={info} />
-            </React.Fragment>
+            </Fragment>
           ) : (
-            <React.Fragment key={i}>
+            <Fragment key={i}>
               <ProjectInfo info={info} />
               <ProjectImages images={images} />
-            </React.Fragment>
+            </Fragment>
           );
         })}
       </div>

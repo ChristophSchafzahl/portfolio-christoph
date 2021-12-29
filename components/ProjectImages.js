@@ -2,9 +2,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards, Navigation } from 'swiper';
 import 'swiper/css/bundle';
 
-const ProjectImages = ({ className, images }) => {
+const ProjectImages = ({ images }) => {
   return (
-    <div className={`${className} min-h-[14rem] relative`}>
+    <div className="min-h-[14rem] relative">
       <div className="swiper-button-prev-unique"></div>
       <div className="swiper-button-next-unique"></div>
       <Swiper
