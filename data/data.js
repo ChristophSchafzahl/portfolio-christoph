@@ -1,7 +1,7 @@
 export const socials = {
   email: 'christoph.schafzahl@gmail.com',
-  github: 'https://www.google.com',
-  linkedin: 'https://www.google.com',
+  github: 'https://www.github.com', // full github profile url
+  linkedin: 'https://www.google.com', // full linkedin profile url
 };
 
 export const skills = [
@@ -27,11 +27,12 @@ export const projects = [
       { text: 'Read More', url: 'https://portfolio.fh-salzburg.ac.at/projects/2021-towerhold' },
       { text: 'GitHub', url: 'https://github.com' },
     ],
+    // paths relative to /public/images/projects/
     images: [
-      '/towerhold/towerhold1.webp',
-      '/towerhold/towerhold2.webp',
-      '/towerhold/towerhold3.webp',
-      '/towerhold/towerhold4.webp',
+      'towerhold/towerhold1.webp',
+      'towerhold/towerhold2.webp',
+      'towerhold/towerhold3.webp',
+      'towerhold/towerhold4.webp',
     ],
   },
   {
@@ -42,12 +43,16 @@ export const projects = [
       { text: 'Live Site', url: 'https://google.com' },
       { text: 'GitHub', url: 'https://github.com' },
     ],
-    images: ['/snake/snake1.webp', '/snake/snake2.webp', '/snake/snake3.webp'],
+    // paths relative to /public/images/projects/
+    images: ['snake/snake1.webp', 'snake/snake2.webp', 'snake/snake3.webp'],
   },
 ];
 
 export const models = {
+  // paths relative to /public/images/models/
   main: ['turm.webp', 'auto.webp', 'spinne.webp', 'raupe.webp'],
+
+  // paths relative to /public/images/models/houses
   houses: [
     'house3.webp',
     'house4.webp',
