@@ -4,8 +4,8 @@ const Contact = ({ socials }) => {
   return (
     <section className="mt-32">
       <h2 className="font-bold text-4xl">Get in Touch</h2>
-      <p className="mt-10 text-lg">
-        Wanna help me realize my passion for games? <br />
+      <p className="mt-10 text-2xl">Wanna help me realize my passion for games?</p>
+      <p className="mt-6 text-lg">
         You can reach me via email at{' '}
         <a className="text-yellow-600" href={`mailto:${socials.email}`}>
           {socials.email}
