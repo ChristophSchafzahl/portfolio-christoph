@@ -40,8 +40,8 @@ export const projects = [
     description:
       "Snake is a simple yet widely known game that we all love. Wouldn't it be great to play it with another person? In Snake Versus you can abolish your opponent by stealing away fruits under their noses and blocking their path.",
     links: [
-      { text: 'Live Site', url: 'https://google.com' },
-      { text: 'GitHub', url: 'https://github.com' },
+        { text: 'Live Site', url: 'https://christophschafzahl.github.io/snake-versus/' },
+        { text: 'GitHub', url: 'https://github.com/christophschafzahl/snake-versus/' },
     ],
     // paths relative to /public/images/projects/
     images: ['snake/snake1.webp', 'snake/snake2.webp', 'snake/snake3.webp'],
