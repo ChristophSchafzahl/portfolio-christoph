@@ -13,6 +13,7 @@ das Projekt wird neu gebuildet und deployed.
 
 ## Projektstruktur
 
+```
 .
 |-- components
 | |-- icons
@@ -25,12 +26,13 @@ das Projekt wird neu gebuildet und deployed.
 | | |-- models
 | | |-- projects
 |-- styles
+```
 
 ### Daten
 
 Die meisten veränderlichen Daten können in `/data/data.js` angepasst werden. Die Social-Links als
 volle URL zum Profil (nicht nur Username). Skills einfach im Array hinzufügen, für zusätzliche Projekte
-einfach ein Projekt-Objekt kopieren und entsprechend anpassen. Die Pfadangaben der Bilder sind immer relativ
+am besten ein Projekt-Objekt kopieren und entsprechend anpassen. Die Pfadangaben der Bilder sind immer relativ
 zum enstprechenden Ordner (siehe Assets Abschnitt). Bei den Models sind `main` die im Grid einzeln dargestellten,
 `houses` werden für den Kartenstapel verwendet.
 
