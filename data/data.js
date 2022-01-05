@@ -1,7 +1,7 @@
 export const socials = {
   email: 'christoph.schafzahl@gmail.com',
   github: 'https://www.github.com', // full github profile url
-  linkedin: 'https://www.google.com', // full linkedin profile url
+  linkedin: 'https://www.linkedin.com/in/cschafzahl/', // full linkedin profile url
 };
 
 export const skills = [
